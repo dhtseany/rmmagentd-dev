@@ -1,0 +1,31 @@
+pre_install() {
+    RMM_BASE="/usr/local/rmmagent"
+    SVC_NAME="rmmagentd"
+    LOG_DIR="/var/log/rmmagent"
+
+    # Init logs, if not available
+    mkdir -p "${LOG_DIR}"
+}
+
+post_install() {
+    echo "To register this server in the dashboard please run '# /usr/rmmagent/rmmagentd -i'"
+    echo ""
+    echo "When asked if you want to start the agent during setup, choose 'No' then"
+    echo "enable and start the rmmagentd service to begin monitoring and data submission."
+}
+
+pre_upgrade() {
+    pre_install
+}
+
+post_upgrade() {
+    post_install
+}
+
+pre_remove() {
+    echo "[Notice] echo"
+}
+
+post_remove() {
+    echo "[Notice] echo"
+}
