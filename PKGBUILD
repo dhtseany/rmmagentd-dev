@@ -25,6 +25,8 @@ install=.INSTALL
 source_x86_64=("https://rm-downloads.logicnow.com/rmmagent_2.0.1_amd64.deb")
 
 source=("rmmagentd.service")
+source=("rmmagent.patch")
+
 
 #.deb file
 md5sums_x86_64=('366ebdb8508aef3e9676ce70e123fccc')
