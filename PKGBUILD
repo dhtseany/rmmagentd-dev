@@ -15,8 +15,11 @@ depends_x86_64=(
 	'smartmontools'
 	'gcc-libs'
 	'glibc'
-	'openssl'
-	'unzip')
+	'unzip'
+	'openssl-1.0'
+	'dmidecode'
+ 	'qt5-declarative'
+)
 
 conflicts_x86_64=('rmmagent')
 
