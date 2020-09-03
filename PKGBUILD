@@ -22,9 +22,9 @@ conflicts_x86_64=(
 	'rmmagent')
 
 install=.INSTALL
-source_x86_64=("https://rm-downloads.logicnow.com/rmmagent_2.0.1_amd64.deb")
+source=("https://rm-downloads.logicnow.com/rmmagent_2.0.1_amd64.deb")
 source=("rmmagentd.service")
-md5sums_x86_64=('0bb216f199543589d98a78be4ffd30c2')
+md5sums=('366ebdb8508aef3e9676ce70e123fccc')
 md5sums=('28e9171b39f6eafcca88d70aea08195a')
 
 prepare() {
