@@ -7,7 +7,7 @@ index 93deaa7..447c4f0 100755
  fi
  
 -RMM_BASE="/usr/local/rmmagent"
-+RMM_BASE="/usr/share/rmmagent"
++RMM_BASE="/usr/rmmagent"
  NAME=rmmagentd
  DAEMON="${RMM_BASE}/${NAME}"
  PIDFILE="/var/run/${NAME}.pid"
@@ -21,8 +21,8 @@ index 777db09..2825f3a 100644
  PIDFile=/var/run/rmmagentd.pid
 -WorkingDirectory=/usr/local/rmmagent
 -ExecStart=/usr/local/rmmagent/rmmagentd serve
-+WorkingDirectory=/usr/share/rmmagent
-+ExecStart=/usr/share/rmmagent/rmmagentd serve
++WorkingDirectory=/usr/rmmagent
++ExecStart=/usr/rmmagent/rmmagentd serve
  ExecReload=/bin/kill -s HUP $MAINPID
  ExecStop=/bin/kill -s TERM $MAINPID
  KillMode=process

@@ -18,8 +18,10 @@ pkgbase = rmmagent-dev
 	depends_x86_64 = smartmontools
 	depends_x86_64 = gcc-libs
 	depends_x86_64 = glibc
-	depends_x86_64 = openssl
 	depends_x86_64 = unzip
+	depends_x86_64 = openssl-1.0
+	depends_x86_64 = dmidecode
+	depends_x86_64 = qt5-declarative
 	md5sums_x86_64 = 366ebdb8508aef3e9676ce70e123fccc
 
 pkgname = rmmagent-dev
