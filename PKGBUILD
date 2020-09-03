@@ -24,8 +24,10 @@ conflicts_x86_64=(
 install=.INSTALL
 source_x86_64=("https://rm-downloads.logicnow.com/rmmagent_2.0.1_amd64.deb")
 source=("rmmagentd.service")
+source=("rmmagent.patch")
 md5sums_x86_64=('366ebdb8508aef3e9676ce70e123fccc')
 md5sums=('28e9171b39f6eafcca88d70aea08195a')
+md5sums=('5a589a6657367146bb872d43de939af4')
 
 prepare() {
 	tar -xf $srcdir/data.tar.gz
