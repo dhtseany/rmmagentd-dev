@@ -33,7 +33,7 @@ prepare() {
 	mv usr/local/rmmagent usr/rmmagent
 	mkdir -p "$srcdir"/etc/systemd/system	
 	cp rmmagentd.service "$srcdir"/etc/systemd/system/rmmagentd.service
-	patch -Np1 -i "${srcdir}/rmmagent.patch"
+	patch -Np1 -i rmmagent.patch
 }
 
 package() {
