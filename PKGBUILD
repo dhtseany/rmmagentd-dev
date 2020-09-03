@@ -33,12 +33,12 @@ source=(
 
 #.deb file
 md5sums_x86_64=('366ebdb8508aef3e9676ce70e123fccc')
+
 # rmmagentd.service
 # rmmagent.patch
-
 md5sums=(
 	'28e9171b39f6eafcca88d70aea08195a'
-	'5a589a6657367146bb872d43de939af4'
+	'd6054af1b844776af62e10ecedd4f855'
 )
 
 prepare() {
